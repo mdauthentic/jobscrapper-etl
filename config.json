@@ -1,0 +1,12 @@
+{
+    "candidate_location": "Grenoble, France",
+    "candidate_email": "muideen.lawal320@gmail.com",
+    "job_title": "data engineer",
+    "location": "UK",
+    "tech_stack": ["python", "react", "redux", "scraping", "javascript", "automation", "web+scraping"],
+    "locations": ["Germany", "Netherlands", "United+Kingdom", "Canada"],
+    "driver_path": "/usr/local/bin/chromedriver",
+    "distance": "20km",
+    "visa_offer": "true",
+    "relocation_offer": "true"
+}
