@@ -50,5 +50,7 @@ Libraries used:
 =========
 Todo:
 =========
+PS: this is still a work in progress and several aspect of the code might be modified.
+
 - Workflow automation with ``Airflow`` to run the job once a week (webscrapping can be load intensive, so you do not want to overload a site).
 - Add more insight to the visualization
