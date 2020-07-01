@@ -11,7 +11,7 @@ Introduction
 This is project scrape job details from a job website, transforms it and load, and saves the resulting data into ``MySQL`` and ``csv`` respectively.
 A dashboard is also created from the final data.
 
-.. figure:: stars.jpg
+.. figure:: resources/etl-modern.png
     :width: 200px
     :align: center
     :height: 100px
