@@ -33,6 +33,6 @@ def upload_jobs(jobs_df, topN):
     db          = Database(Config)
     data_upload = db.upload_jobs_dataframe(jobs_df)
     topN_upload = db.topN_word_to_csv(jobs_df)
-    # return data_upload, topN_upload
-    return data_upload
+    return data_upload, topN_upload
+    # return data_upload
 

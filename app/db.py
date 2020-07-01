@@ -9,7 +9,6 @@ class Database:
     def __init__(self, Config):
         self.db_uri = Config.db_uri
         self.db_job_table = Config.db_job_table
-        self.db_schema = Config.db_schema
         self.meta = MetaData(schema=self.db_schema)
         self.engine = create_engine(self.db_uri,
                                     connect_args={'sslmode': 'require'},
@@ -19,12 +18,13 @@ class Database:
         date_stamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
         file_name = 'wordfreq_' + date_stamp + 'csv'
         word_freq_df.to_csv(file_name)
+        msg = f'{file_name} created.'
+        return msg
 
     def upload_jobs_dataframe(self, jobs_list_df):
         jobs_list_df.to_sql(self.db_job_table, self.engine,
                             chunksize=500,
                             index=False,
-                            schema=self.db_schema,
                             dtype={"job_title": String(30),
                                      "company": String(50),
                                      "date_posted": String(30),

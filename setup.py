@@ -14,7 +14,7 @@ class Install(_install):
 setup(
       name='jobscrapper-etl',
       version='0.1',
-      description='Scrap Indeed job posting and import them into MySQL database.',
+      description='Scrap job posting, get a list of top words and import job details into MySQL database.',
       long_description=readme(),
       classifiers=[
         'Development Status :: 2 - Alpha',
