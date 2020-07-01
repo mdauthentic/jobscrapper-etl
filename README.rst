@@ -18,7 +18,8 @@ A dashboard is also created from the final data.
     :alt: etl
     :figclass: align-center
 
-    `Image source <https://www.stitchdata.com/etldatabase/etl-process/>`_
+.. class:: center
+    A comtemporary ETL process. `Image source <https://www.stitchdata.com/etldatabase/etl-process/>`_
 
 ---------------
 E - Extraction

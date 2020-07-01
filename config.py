@@ -1,14 +1,9 @@
 from os import environ, path, getcwd
-# from dotenv import load_dotenv
 import sys
 import json
 
-# basedir = path.abspath(path.dirname(__file__))
-# load_dotenv(path.join(basedir, '.env'))
 
 def get_path_from_rel(rel_path):
-    # cwd = os.getcwd()
-    # return os.path.join(cwd, rel_path)
     cwd = getcwd()
     return path.join(cwd, rel_path)
 
