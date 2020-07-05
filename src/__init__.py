@@ -28,11 +28,10 @@ def clean_jobs(jobs):
     return jobs_df, extract_topN
 
 def upload_jobs(jobs_df, topN):
-    """Upload issues table to SQL database."""
+    """add job details to SQL database."""
     print("Preparing database upload...")
     db          = Database(Config)
     data_upload = db.upload_jobs_dataframe(jobs_df)
     topN_upload = db.topN_word_to_csv(jobs_df)
     return data_upload, topN_upload
-    # return data_upload
 
