@@ -7,7 +7,7 @@ from .db import Database
 def main():
     """Application Entry Point"""
 
-    logger = logging.basicConfig(filename='logs/errors.log',
+    logging.basicConfig(filename='logs/errors.log',
                                  filemode='w',
                                  format='%(name)s - %(levelname)s - %(message)s',
                                  level=logging.ERROR)
