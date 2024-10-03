@@ -4,7 +4,7 @@ idna==3.7
 logger==1.4
 numpy==1.22.0
 pandas==0.25.3
-PyMySQL==0.9.3
+PyMySQL==1.1.1
 python-dateutil==2.8.1
 python-dotenv==0.10.3
 pytz==2019.3
